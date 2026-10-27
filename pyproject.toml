@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gguycoms-autobatch"
+version = "0.1.0"
+description = "按到达率与延迟目标计算建议批大小，并给出调整区间"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "gguycoms" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://gguycoms.github.io"
+Repository = "https://github.com/gguycoms/autobatch"
+Issues = "https://github.com/gguycoms/autobatch/issues"
+
+[project.scripts]
+autobatch = "autobatch:main"
+
+[tool.setuptools]
+py-modules = ["autobatch"]
